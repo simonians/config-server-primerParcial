@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    shutdown: #NUNCA USAR ESTO EN PRODUCCIÓN
+      enabled: true
+info:
+  env:
+    enabled: true
